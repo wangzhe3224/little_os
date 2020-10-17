@@ -5,3 +5,7 @@ run `nasm -o mbr.bin mbr.S` to compile our dummy MBR. Then we need to build an i
 After we got the image with our MBR. Start simulate of the booting:
 
 `qemu-system-i386 -curses hd60M.img`
+
+Some ref:
+
+https://medium.com/@jain.sm/understanding-the-os-boot-process-24b1f1da743b
