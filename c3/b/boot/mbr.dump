@@ -1,0 +1,37 @@
+
+mbr.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00000000 <.data>:
+   0:	8c c8                	mov    %cs,%eax
+   2:	8e d8                	mov    %eax,%ds
+   4:	8e c0                	mov    %eax,%es
+   6:	8e d0                	mov    %eax,%ss
+   8:	8e e0                	mov    %eax,%fs
+   a:	bc 00 7c b8 00       	mov    $0xb87c00,%esp
+   f:	b8 8e e8 b8 00       	mov    $0xb8e88e,%eax
+  14:	06                   	push   %es
+  15:	bb 00 07 b9 00       	mov    $0xb90700,%ebx
+  1a:	00 ba 4f 18 cd 10    	add    %bh,0x10cd184f(%edx)
+  20:	65 c6 06 00          	movb   $0x0,%gs:(%esi)
+  24:	00 31                	add    %dh,(%ecx)
+  26:	65 c6 06 01          	movb   $0x1,%gs:(%esi)
+  2a:	00 a4 65 c6 06 02 00 	add    %ah,0x206c6(%ebp,%eiz,2)
+  31:	20 65 c6             	and    %ah,-0x3a(%ebp)
+  34:	06                   	push   %es
+  35:	03 00                	add    (%eax),%eax
+  37:	a4                   	movsb  %ds:(%esi),%es:(%edi)
+  38:	65 c6 06 04          	movb   $0x4,%gs:(%esi)
+  3c:	00 4d 65             	add    %cl,0x65(%ebp)
+  3f:	c6 06 05             	movb   $0x5,(%esi)
+  42:	00 a4 65 c6 06 06 00 	add    %ah,0x606c6(%ebp,%eiz,2)
+  49:	42                   	inc    %edx
+  4a:	65 c6 06 07          	movb   $0x7,%gs:(%esi)
+  4e:	00 a4 65 c6 06 08 00 	add    %ah,0x806c6(%ebp,%eiz,2)
+  55:	52                   	push   %edx
+  56:	65 c6 06 09          	movb   $0x9,%gs:(%esi)
+  5a:	00 a4 eb fe 00 00 00 	add    %ah,0xfe(%ebx,%ebp,8)
+	...
+ 1fd:	00 55 aa             	add    %dl,-0x56(%ebp)
